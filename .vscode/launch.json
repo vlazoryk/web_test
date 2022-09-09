@@ -8,7 +8,7 @@
             "type": "pwa-chrome",
             "request": "launch",
             "name": "Open index.html",
-            "file": "c:\\Users\\vlazoryk\\source\\GitHub\\web_test\\index.html"
+            "file": "c:\\Users\\vlazoryk\\source\\GitHub\\web_test\\site\\test.html"
         }
     ]
 }

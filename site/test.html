@@ -5,30 +5,94 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script >
+        
+         var a = 100;
+        function pr()
+        {
+         let age = prompt ('Скільки тобі років?', 100);
+         alert (`Тобі ${age} років!`); // Тобі 100 років! (оператор)
+     
+        }
+        function cf() {
+        let isBoss = confirm ("Ти тут головний?");
+     alert (isBoss); // true, якщо натиснута OК
+        }
+     
+        function dw(){
+         document.writeln(" test dr ");
+         document.writeln(" <b> Test </b>  <hr> tysddius")
+        }
+     
+        function f1(){
+         console.log("  move ... move ");
+        }
+        function f2() {
+         console.log( " .... on move ");
+        }
+     
+         </script>
+    <script language="JavaScript" src="..\js\my_rabbits.js"></script>
+
 </head>
 <body>
-    <h1 class="mete"> </h1>
-    <div>
-        <h1>
-            <p></p>
-            <p></p>
-            <p></p>
-        </h1>
-    </div>
-    <div>
-        <h1>
-            <p></p>
-            <p></p>
-            <p></p>
-        </h1>
-    </div>
-    <div>
-        <h1>
-            <p></p>
-            <p></p>
-            <p></p>
-        </h1>
-    </div>
-    
+    <script>
+     //   d = new date();
+      /*              alert('момент завантаження сторінки:'
+                        + d.gethours() + ':'
+                        + d.getminutes() + ':'
+                        + d.getseconds());
+                        */
+        </script>
+    <h1> Тестування можливостей  js</h1>
+
+    <i onclick="alert('Увага')" onmousemove="f1()"> msg: Увага  </i> 
+    <br>
+    <b onclick="cf()" onmousemove="f2()" > Test  confirm</b>
+    <br>
+    <b onclick="pr()" onmousemove="f1()"> Test prompt  </b>
+
+    <br>
+    <b onclick="dw()"> Test dw  </b>
+
+
+    <h1>  Example 1</h1>
+    <p>
+        <a href="JavaScript:alert('Увага!!!');"> 
+	Натисніть тут </a>
+    <br>
+
+      <a href="table.html" >   Table </a>
+
+    </p>
+
+    <br />
+    <h1>  Example 2</h1>
+    <form method=post name="form"
+    action="javascript: form.e.value = 'натиснули кнопку: заповнити';
+ alert('Заповняємо поле !'); void (0);">
+        <input type=text name=e size=30 value=""> <br>
+        <input type=submit value="Заповнити">
+        <input type=reset value="Очистити">
+    </form>
+
+    <h1 >Рахуємо кроликів</h1>
+    <input type="button" onclick="count_rabbits()" value="Рахувати кролів!" />
+
+    <h1>... Порахували</h1>
+  </body>
+
+  <!--
+  <script type="text/javascript">
+    function count_rabbits() {
+    for (var i = 1; i <= 3; i++) 
+      { alert("З капелюха дістали " + i + " кролика!") }
+     
+      let age = prompt ('А у Вас скільки кроликів?', 20);
+   alert (`У Вас ${age}  кроликів!`); // Тобі 100 років! (оператор)     
+    }
+</script>
+-->
+  
 </body>
 </html>
