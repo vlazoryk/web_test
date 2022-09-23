@@ -45,7 +45,7 @@
                         */
         </script>
     <h1> Тестування можливостей  js</h1>
-
+<!--
     <i onclick="alert('Увага')" onmousemove="f1()"> msg: Увага  </i> 
     <br>
     <b onclick="cf()" onmousemove="f2()" > Test  confirm</b>
@@ -80,8 +80,8 @@
     <input type="button" onclick="count_rabbits()" value="Рахувати кролів!" />
 
     <h1>... Порахували</h1>
-  </body>
-
+  
+  -->
   <!--
   <script type="text/javascript">
     function count_rabbits() {
@@ -93,6 +93,32 @@
     }
 </script>
 -->
+
+<script>
+  function myFunc(theObject) {
+      theObject.make = 'Toyota';
+  }
+  var mycar = { make: 'Honda', model: 'Accord', year: 1998 };
+  var x, y;
+  x = mycar.make; // x отримує значення "Honda"
+  myFunc(mycar);
+  y = mycar.make; // y отримує значення "Toyota"
+  // (властивість make була змінена функцією)
+  alert(mycar.make);
+  function SetValue(a) {
+      a = 100;
+  }
+  function SetArray(arr) {
+      for (i = 1; i < arr.length; i++) arr[i] = i;
+  }
+  a = 10;
+  SetValue(a);
+  alert(a);
+  arr = Array(5);
+  SetArray(arr);
+  alert(arr);
+</script>
+
   
 </body>
 </html>
