@@ -11,11 +11,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=7">
     <meta name="keywords" content="">
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <script type="text/javascript">
+        function count_rabbits() {
+             for (var i = 1; i <= 3; i++) {
+                 alert("З капелюха дістали " + i + " кролика!")
+             }
+         }
+     </script>
+     <script language="JavaScript" src="js/my_rabbits.js"></script>
+
 </head>
 <body>
+    <div>
+        <h1> Test jQuery </h1> 
+  <!--       <a href="site/testjQuery.html"> Move test jQuery </a> -->
+     
+    </div>
       <h1> Hello </h1>
       <i onclick="alert('Hello')">  Show msg </i>
-        
+        <a href="Javascript:{a=10; alert(a+a)}">  Text </a>
          <div onclick="AddToDiv()"> test </div>
 <div id = id_div></div>
 
@@ -23,6 +37,25 @@
              <b  onclick="test()">  текст </b> <i></i>
          </span>
         <b ondblclick="DW()"> D_C </b>
+        <h1>  Example 2</h1>
+        <form method=post name="form"
+        action="javascript: form.e.value = 'натиснули кнопку: заповнити';
+     alert('Заповняємо поле !'); void (0);">
+            <input type=text name=e size=30 value=""> <br>
+            <input type=submit value="Заповнити">
+            <input type=reset value="Очистити">
+        </form>
+        <h1>Рахуємо кроликів</h1>
+        <!--
+      <script type="text/javascript">
+            for (var i = 1; i <= 3; i++) 
+{ alert("З капелюха дістали " + i + " кролика!") }
+        </script>
+        <h1>... Порахували</h1>
+    -->
+    <input type="button" onclick="count_rabbits1()" value="Рахувати кролів!" />
+
+ 
 
 </body>
 </html>
